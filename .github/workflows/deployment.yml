@@ -1,0 +1,40 @@
+name: Deploying the website to Github Pages
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Setting up nodejs
+      uses: actions/setup-node@v1
+      with:
+        node-version '14.x'
+
+    - name: Setting up ruby
+      uses: actions/setup-ruby@v1
+      with:
+        ruby-version: '2.6'
+    
+    - name: Install ruby dependencies
+      run: bundle install
+
+    - name: Install npm dependencies
+      run: npm install
+
+    - name: Build
+      run: bundle exec jekyll
+
+    - name: "Deploy"
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        publish_dir: ./_site
+        publish_branch: master
+        external_repository: anubis-rs/anubis-rs.github.io 
+        user_name: GitHub Action
+        user_email: action@github.com
+        force_orphan: true
