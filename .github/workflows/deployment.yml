@@ -38,3 +38,4 @@ jobs:
         user_name: GitHub Action
         user_email: action@github.com
         force_orphan: true
+        emptyCommits: true
