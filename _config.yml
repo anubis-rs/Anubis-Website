@@ -50,3 +50,5 @@ exclude:
   - tailwind.config.js
   - .gitignore
   - vendor
+  - _pages/privacy-policy.md
+  - _pages/terms.md
