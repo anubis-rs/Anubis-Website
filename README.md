@@ -9,12 +9,12 @@ Requirements are a fully functional ruby installation
 
 `cd Anubis-Website/`
 
-## Install dependencies
+### Install dependencies
 `bundle install`
 
 `npm install`
 
-## Building the website
+### Building the website
 `bundle exec jekyll build`
 
 Website code is located in \_site directory
