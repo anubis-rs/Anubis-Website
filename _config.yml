@@ -1,8 +1,6 @@
 title: Anubis
 description: > # this means to ignore newlines until "show_excerpts:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Anubis is a PS Vita emulator written in Rust. It implements most of the emulation logic itself.
 baseurl: "/"
 url: https://anubis-rs.org # change this URL, this is needed for generating right sitemap
 
@@ -32,8 +30,6 @@ jekyll-minifier:
   uglifier_args:
     harmony: true
 
-soopr:
-  publish_token: "" # sign up at https://www.soopr.co to get your publish token and personalize share and reaction options
 
 twitter:
   card: summary_large_image
