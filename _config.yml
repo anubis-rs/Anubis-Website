@@ -1,6 +1,6 @@
 title: Anubis
 description: > # this means to ignore newlines until "show_excerpts:"
-  Anubis is a PS Vita emulator written in Rust. It implements most of the emulation logic itself.
+  Anubis is a PS Vita emulator written in Rust.
 baseurl: "/"
 url: https://anubis-rs.org # change this URL, this is needed for generating right sitemap
 
