@@ -3,56 +3,32 @@ layout: page
 title: About Anubis
 ---
 
-Cookie is a landing page site using [Tailwind CSS](https://www.tailwindcss.com/). You can learn more about customizing the site in `README.md` file in root directory of the project. You can learn more about Jekyll  at [jekyllrb.com](https://jekyllrb.com/)
+Anubis is a PS Vita emulator written in [Rust](https://github.com/rust-lang). It uses [wgpu](https://github.com/gfx-rs/wgpu) for rendering and [SPIR-V](https://www.khronos.org/opengl/wiki/SPIR-V) as shader definition language.
 
-You can find the source code for cookie at GitHub:
-[abhinavs](https://github.com/abhinavs) /
-[cookie](https://github.com/abhinavs/cookie)
+It comes with:
+ - Custom written Arm-Cortex A9 JIT Comipler
+ - GPU emulation
+ - and much more
 
-Cookie is a Jekyll based static website for your next project. It uses Tailwind CSS and comes with
-1. Landing Page
-2. Blog
-3. Auxilarly Pages like Terms, Privacy Policy, Contact and About us.
+You can find the source code for Anbuis at GitHub:
+[Anubis](https://github.com/anubis-rs/anubis)
 
-All pages are responsive and mobile friendly.
+Anubis is not only a PS Vita emulator but also a growing community that deals with vita hacking/homebrew.
+Join our community [here](https://discord.gg/Kphvzgwdkz)
 
-## Why Jekyll?
-Jekyll is a static website generator - what it means is that in production, your site will be extremely fast because it has been 'compliled' into HTML pages while deployment. Separating your landing website from your app website is also useful because it takes away the load which otherwise your app website would have handled - it keeps your app website free.
+## Why Rust?
+Rust is a systems programming language that places a lot of emphasis on security and accuracy.
+Because of these facts I decided to use this language.
+In addition, it also has a lot to offer with its great ecosystem
 
-Cookie uses Tailwind 2.0 which is a good improvement over Tailwind 1.0.
-
-## Soopr
-[Soopr][soopr-website] is the easiest way to for you add share reaction buttons to your blog and website, integrate an URL shortener and analytics service. Soopr lets you manage all of these using a powerful dashboard.
-
-Cookie uses Soopr for share and like buttons and is already integrated. By default, Cookie shows `circular` Twitter, Facebook and Copy buttons in `base` size. To add `like` button, please signup for free on [Soopr][soopr-website]
-
-Check out the [Soopr Website][soopr-website] for more info on how to get the most out of Soopr. 
+## WGPU
+[wgpu](https://github.com/gfx-rs/wgpu) is an implementation of the WebGPU API, targeting both native and Web. I decided to use it, since it already provides support to the target platforms I had in mind implementing the CPU JIT Compiler for.
+For shaders we will use the intermediate shader definition language [SPIR-V](https://www.khronos.org/opengl/wiki/SPIR-V).
+In addition we will use [winit](https://github.com/rust-windowing/winit) for window management.
 
 
 ## Installation
-1. Fork this repository.
-2. `cd cookie`
-3. `bin/bootstrap`
-
-## Starting Server
-`bin/start`
-
-## Customizing
-1. You can customized landing page by modifying index.html in root directory.
-2. You can add analytics, URL shortner and share buttons using Soopr, sign up on [Soopr][soopr-website], get a publish token for your website and add it in `_config.yml` file 
-3. You can customnize other website pages by modifying files present in `_pages` directory. You can add more pages too - you will be able to directly link to them using filename. Don't forget to customize Terms & Privacy Policy.
-4. You can write blog posts in `_posts` directory. Tailwind Typography for better blog formating and code syntax highlighting is already included.
-5. You should also checkout `_config.yml` in root directory, and add relevant details. Many of them are used for SEO purposes.
-6. You should also add favicons in `custom-head.html` present in `_includes` directory.
-7. You can customize image assets in `assets/img` directory.
-8. You will have to hook the 'Work with Us' form present on main page with a real backend.
-9. [Font Awesome](https://fontawesome.com/) is also integrated, to add any icon in your HTML files, you can refer to the website
-
-## Deploy Instructions
 TODO
 
 ## Credits
-Landing page is based on [Tailwind Starter Kit](https://www.creative-tim.com/learning-lab/tailwind-starter-kit/presentation) - thanks for providing an amazing landing page under MIT License.
-
-
-[soopr-website]: https://www.soopr.co
+TODO
