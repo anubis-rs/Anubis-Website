@@ -19,3 +19,8 @@ Requirements are a fully functional ruby installation
 
 Website code is located in \_site directory
 
+### Starting server
+`bundle exec jekyll serve --livereload --drafts --future --port 4061 --livereload_port 35729 "$@"`
+
+Starts a webserver on 127.0.0.1:4061
+
