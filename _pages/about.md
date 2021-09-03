@@ -6,7 +6,7 @@ title: About Anubis
 Anubis is a PS Vita emulator written in [Rust](https://github.com/rust-lang). It uses [wgpu](https://github.com/gfx-rs/wgpu) for rendering and [SPIR-V](https://www.khronos.org/opengl/wiki/SPIR-V) as shader definition language.
 
 It comes with:
- - Custom written Arm-Cortex A9 JIT Comipler
+ - Custom written Arm-Cortex A9 JIT Compiler
  - GPU emulation
  - and much more
 
